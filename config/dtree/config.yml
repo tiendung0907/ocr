@@ -1,0 +1,26 @@
+text_field: content
+doc_type_field: loai_vb
+min_overlap: 0.7
+
+child_fields:
+    - don_vi
+    - don_gia
+    - thanh_tien
+    - so_luong
+    - noi_dung
+    - ten_thuoc
+    - ten_dich_vu
+
+parent_fields:
+    - thong_tin_dich_vu 
+    - thong_tin_thuoc     
+    - thong_tin_xet_nghiem
+    - thong_tin_thoi_gian
+
+unique_fields:
+    - ten_benh_nhan
+
+duplicatable_fields:
+    - thong_tin_dich_vu
+    - thong_tin_thuoc
+    - thong_tin_xet_nghiem

@@ -1,0 +1,29 @@
+resnet:
+    config: model/doc/config.yml
+    weights: model/doc/model.pth
+
+crop:
+    config: model/crop/config.yml 
+    weights: model/crop/model.pth
+
+dtree:
+    config: model/dtree/config.yml
+
+detectron:
+    config: model/layout/config.yml
+    weights: model/layout/model.pth
+
+vietocr:
+    config: model/ocr/config.yml
+    weights: model/ocr/model.pth
+
+translate:
+    map: model/translate/map.json
+
+log: null
+
+device: cuda:0
+text_detector: gvision 
+api:
+    host: 0.0.0.0
+    port: 30004

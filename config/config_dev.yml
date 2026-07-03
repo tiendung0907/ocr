@@ -1,0 +1,29 @@
+resnet:
+    config: /data/quocpbc/notebooks/nic/doc/config.yml
+    weights: /data/quocpbc/notebooks/nic/doc/classification.pth
+
+crop:
+    config: /data/quocpbc/notebooks/nic/crop/config.yml 
+    weights: /data/quocpbc/notebooks/nic/crop/segment/model_final.pth
+
+dtree:
+    config: /data/quocpbc/notebooks/nic/hades/config/dtree/config.yml 
+
+detectron:
+    config: /data/quocpbc/notebooks/nic/layout/config.yml
+    weights: /data/quocpbc/notebooks/nic/layout/output/model_final.pth
+
+vietocr:
+    config: /data/quocpbc/notebooks/nic/ocr/seq2seq_config.yml
+    weights: /data/quocpbc/notebooks/nic/ocr/weights/seq2seqocr.pth
+
+translate:
+    map: /data/quocpbc/notebooks/nic/translate/code_map.json
+
+log: /tmp/nic/
+
+device: cuda:0
+text_detector: gvision   
+api:
+    host: 0.0.0.0
+    port: 30004
