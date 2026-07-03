@@ -38,8 +38,5 @@ docker run  --gpus '"device=0"' -itd -p 30004:8000 hades:v0 -w {num_worker}
 curl -F 'file=@011030002-11.jpg' 183.91.11.38:30004/nic_img
 ```
 
-## Problems
-Nếu có bất kì vấn đề gì vui lòng liên hệ pbcquoc@gmail.com
-
 # hades
 # hades
